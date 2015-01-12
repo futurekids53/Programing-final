@@ -22,7 +22,6 @@ int snakeDir = 0;
 
 void setup(){
   img = new Img();
-  bait = new Bait(30);
   size(640,480);
   gameState = GAME_START;
 }
@@ -44,6 +43,7 @@ void draw(){
                        snake.snakeShow(snakeDir,img);
                        bait.baitShow();
                        eatBait();
+                    
                        break;       
        case GAME_PAUSE:
                        textSize(30);
@@ -66,7 +66,7 @@ void mousePressed(){
      bodyLength=5;
      snake = new Snake(300,20);
      snake.initSnake();
-     bait  = new Bait(20);
+     bait  = new Bait();
      bait.setBait(snake);
      gameState=GAME_RUN;
      currentTime=millis();
@@ -106,6 +106,21 @@ void keyPressed(){
 
 
 void eatBait(){
+  if(bait!=null && !bait.gone
+  && bait.x <= snake.x + 30
+  && bait.x >= snake.x - 30
+  && bait.y <= snake.y + 30
+  && bait.y >= snake.y - 30){
+    
+    removeBait();
+    bait.setBait(snake);
+    bait.gone= false;
+                      
+}}
 
+void removeBait(){
+  bait.gone = true;
+  bait.x = 1000;
+  bait.y = 1000;
 }
 

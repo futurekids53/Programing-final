@@ -1,29 +1,27 @@
 class Bait{
       int x;
       int y;
-      int size;
-      boolean repeated;
+      boolean gone = false;
       
-      Bait(int size){
+      Bait(){
         this.x=0;
         this.y=0;
-        this.size=size;
       }
 
-      void setBait(Snake snake){ 
-        do{
-        repeated = false;
-        bait.x = int(random(32))*20-10;
-        bait.y = int(random(24))*20-10;
-        }
-        while( bait.x == snake.x && bait.y == snake.y);
+      void setBait(Snake snake){
+        x= int(random(width));
+        y= int(random(height));
+        
+        if(x==snake.x && y== snake.y){
+       x=int(random(width));
+       y =int(random(height));}
+        
+        
       }
       
       void baitShow(){
-       fill(0,255,255);
-       noStroke();
-       ellipse(bait.x, bait.y, size, size);
+      rectMode(CENTER);
+        fill(238, 64, 0);
+        rect(x,y, 30,30,50);
       }
-      
-      
 }

@@ -16,7 +16,6 @@ class Snake{
             }
             return tmp;
       }
-      
       void initSnake(){
         Snake tmp = this;
         for(int i=1;i<bodyLength;i++){ 
@@ -28,6 +27,7 @@ class Snake{
       void snakeShow(int headDir,Img img){
            for(Snake tmp = this;tmp!=null;tmp=tmp.next){
               if(tmp==this){
+                imageMode(CENTER);
                    image(img.head[headDir-1],tmp.x,tmp.y,snakeSize,snakeSize);
               }
               else if(tmp.next!=null){
@@ -51,6 +51,14 @@ class Snake{
       }
       void snakeMove(int dir,int frame){
         if(currentFrame >= frame){
+              if(x> width){x = 0;}
+          else if(x<0){
+          x = width;}
+          if(y>height){
+          y =0;}
+          else if(y<0){
+          y = height;}
+         
           for(Snake tmp = this.getSnakeTail(); tmp.prev != null;tmp = tmp.prev){
               tmp.x=tmp.prev.x;
               tmp.y=tmp.prev.y;         
@@ -58,27 +66,15 @@ class Snake{
           switch(dir){
              case DIR_UP:
                     this.y-=snakeSize;
-                    if( this.y < 0 ){
-                      this.y = height;
-                    }
                     break;
              case DIR_DOWN:
                     this.y+=snakeSize;
-                    if(this.y >height){
-                      this.y = 0;
-                    }
                     break;
              case DIR_LEFT:
                     this.x-=snakeSize;
-                    if(this.x <0){
-                      this.x = width;
-                    }
                     break;
              case DIR_RIGHT:
                     this.x+=snakeSize;
-                    if(this.x >width){
-                      this.x =0;
-                    }
                     break;
              default:
                     break;
@@ -86,8 +82,8 @@ class Snake{
           currentFrame=0;
         }
       }
-    void appendBody(){      
-      
+    void appendBody(){
+
       
     }  
     int eatSelf(){
