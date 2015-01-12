@@ -28,7 +28,7 @@ class Pro{
         image(pro, x, y,298,377);
          counter++;
         if(keyPressed){
-           if(key == 'z'){
+           if(key == 'z' || key == 'Z' && miss!=true){
              hit = true;
              time =  millis();
          }

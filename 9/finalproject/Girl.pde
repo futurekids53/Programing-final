@@ -30,11 +30,11 @@ class Girl{
         
         if(keyPressed){
          
-         if(key == '/'){
+         if(key == '/' && miss!=true){
            hit = true;
            time = millis();       
          }
-         if(key == 'z' ){
+         if(key == 'z' || key == 'Z' ){
            
            miss = true;
            time = millis();

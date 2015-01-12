@@ -114,11 +114,12 @@ void draw() {
     showPic();
     drawLife();
     printText();
-    shadow.show();
+    
     girl.display();
     girl.delay();
     pro.display();
     pro.delay();
+    shadow.show();
     break;
 
     case GAME_WIN:
@@ -276,6 +277,7 @@ void statusCtrl() {
     case GAME_LOSE:
       status = GAME_START;
       gameReset();
+      doorReset();
       break;
     }
   }

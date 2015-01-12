@@ -37,7 +37,7 @@ class Door{
     if(open.pressed){
       doorSpeed = addSpeed;
     }
-    println(lx);
+    //println(lx);
   }
   
 }
