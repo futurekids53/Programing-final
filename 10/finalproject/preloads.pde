@@ -12,7 +12,7 @@
                   data/GAME_LOSE.png,
                   data/GAME_WIN.png,
                   data/naked.png,
-                  data/playing.png,
+                  data/playing.jpg,
                   data/target.jpg,
-                  data/targeting.jpg;
+                  data/targeting.png;
                   */
