@@ -16,15 +16,15 @@ class Pro{
     this.y = pY;
     this.l = pL;
     this.h = pH;
-    dingdong = hi.loadSnippet("HI.wav");
-    angry = roar.loadSnippet("HEY.wav");
+    dingdong = hi.loadSnippet("data/HI.wav");
+    angry = roar.loadSnippet("data/HEY.wav");
   }
 
   void display(){
     if( shadow.l >= 280 ){
       if( shadow.showUp == 0 ){
         
-        PImage pro = loadImage("pro.png");
+        PImage pro = loadImage("data/pro.png");
         image(pro, x, y,298,377);
          counter++;
         if(keyPressed){
@@ -53,7 +53,7 @@ class Pro{
     if(hit == true){
           x = 1000;
           dingdong.play();
-          PImage proIn = loadImage("pro_in.png");
+          PImage proIn = loadImage("data/pro_in.png");
           image(proIn, 100 ,0,440,480);
           if ( millis() - time >= 200 ){
           doorReset();
@@ -64,7 +64,7 @@ class Pro{
     }else if(miss == true){
           angry.play();
           x = 1000;          
-          PImage proAngry = loadImage("pro_angry.png");
+          PImage proAngry = loadImage("data/pro_angry.png");
           image(proAngry, 49,50 ,519,428 );
           if ( millis() - time >= 200 ){
           doorReset();

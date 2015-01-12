@@ -16,8 +16,8 @@ class Door{
   }
   
   void display(){
-    PImage leftDoor = loadImage("left_door.png");
-    PImage rightDoor = loadImage("right_door.png");
+    PImage leftDoor = loadImage("data/left_door.png");
+    PImage rightDoor = loadImage("data/right_door.png");
     image(leftDoor, this.lx, this.ly);
     image(rightDoor, this.rx, this.ry);    
   }

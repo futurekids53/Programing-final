@@ -17,7 +17,7 @@ class Shadow{
 
 void show(){
     if( l  <= 280 ){
-    PImage shadow = loadImage("shadow.png");
+    PImage shadow = loadImage("data/shadow.png");
     image(shadow, this.x, this.y,this.l,this.h);
     x *= 0.95;
     y *= 0.95;

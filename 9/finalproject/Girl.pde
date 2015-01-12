@@ -16,15 +16,15 @@ class Girl{
     this.y = gY;
     this.l = gL;
     this.h = gH;
-    success = flesh.loadSnippet("flesh.wav");
-    fail = scream.loadSnippet("scream.wav");
+    success = flesh.loadSnippet("data/flesh.wav");
+    fail = scream.loadSnippet("data/scream.wav");
   }
   
   void display(){
     if( shadow.l >= 280 ){      
       if( shadow.showUp == 1 ){
         
-        PImage girl = loadImage("girl.png");
+        PImage girl = loadImage("data/girl.png");
         image(girl, x, y,298,377);
         counter++;
         
@@ -54,7 +54,7 @@ class Girl{
     if(hit == true){
           x = 1000;
           success.play();
-          PImage girlDie = loadImage("girl_dead.png");
+          PImage girlDie = loadImage("data/girl_dead.png");
           image(girlDie, 30 ,0,640,480);
           if ( millis() - time >= 200 ){
           doorReset();
@@ -65,7 +65,7 @@ class Girl{
     }else if(miss == true){
           fail.play();
           x = 1000;          
-          PImage girlIn = loadImage("girl_in.png");
+          PImage girlIn = loadImage("data/girl_in.png");
           image(girlIn, 100,0 ,440,height );
           if ( millis() - time >= 200 ){
           doorReset();

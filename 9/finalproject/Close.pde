@@ -10,7 +10,7 @@ class Close{
  }
  
  void display(){
-   PImage closeButton = loadImage("close.png");
+   PImage closeButton = loadImage("data/close.png");
    image(closeButton, this.x, this.y);
  }
  

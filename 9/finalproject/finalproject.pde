@@ -47,29 +47,29 @@ void setup() {
   close = new Close(350, 425);
   door = new Door(-100, 50, 520, 50);
   
-  gamePlay = loadImage( "game_play_no_background_no_word.png" );
-  lifeScoreBar= loadImage( "life_score_bar.png" );
-  closeButton = loadImage( "close.png" );
-  openButton = loadImage( "open.png" );
-  leftDoor = loadImage( "left_door.png" );
-  rightDoor = loadImage( "right_door.png" );
-  gameStart = loadImage( "game_start.png" );
+  gamePlay = loadImage( "data/game_play_no_background_no_word.png" );
+  lifeScoreBar= loadImage( "data/life_score_bar.png" );
+  closeButton = loadImage( "data/close.png" );
+  openButton = loadImage( "data/open.png" );
+  leftDoor = loadImage( "data/left_door.png" );
+  rightDoor = loadImage( "data/right_door.png" );
+  gameStart = loadImage( "data/game_start.png" );
 
-  gameWin = loadImage( "game_win.png" );
-  gameLose = loadImage( "game_lose.png" );
-  floor1 =  loadImage( "floor_1.png" );
-  floor2 =  loadImage( "floor_2.png" );
-  floor3 =  loadImage( "floor_3.png" );
-  floor4 =  loadImage( "floor_4.png" );
-  floor5 =  loadImage( "floor_5.png" );
-  floor6 =  loadImage( "floor_6.png" );
-  floor7 =  loadImage( "floor_7.png" );
-  floor8 =  loadImage( "floor_8.png" );
-  floor9 =  loadImage( "floor_9.png" );
-  floor10 =  loadImage( "floor_10.png" );
-  floor11 =  loadImage( "floor_11.png" );
-  floor12 =  loadImage( "floor_12.png" );
-  floor13 =  loadImage( "floor_13.png" );
+  gameWin = loadImage( "data/game_win.png" );
+  gameLose = loadImage( "data/game_lose.png" );
+  floor1 =  loadImage( "data/floor_1.png" );
+  floor2 =  loadImage( "data/floor_2.png" );
+  floor3 =  loadImage( "data/floor_3.png" );
+  floor4 =  loadImage( "data/floor_4.png" );
+  floor5 =  loadImage( "data/floor_5.png" );
+  floor6 =  loadImage( "data/floor_6.png" );
+  floor7 =  loadImage( "data/floor_7.png" );
+  floor8 =  loadImage( "data/floor_8.png" );
+  floor9 =  loadImage( "data/floor_9.png" );
+  floor10 =  loadImage( "data/floor_10.png" );
+  floor11 =  loadImage( "data/floor_11.png" );
+  floor12 =  loadImage( "data/floor_12.png" );
+  floor13 =  loadImage( "data/floor_13.png" );
   hi = new Minim(this);
   roar = new Minim(this);
   scream= new Minim(this);
@@ -79,7 +79,7 @@ void setup() {
   pro = new Pro(170,80,41,50);
   
   minim = new Minim(this);
-  bgm = minim.loadFile("BGM.mp3"); 
+  bgm = minim.loadFile("data/BGM.mp3"); 
   bgm.play();    
   
   

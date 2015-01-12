@@ -10,7 +10,7 @@ class Open{
  }
  
  void display(){
-   PImage openButton = loadImage("open.png");
+   PImage openButton = loadImage("data/open.png");
    image(openButton, this.x, this.y);
  }
  
