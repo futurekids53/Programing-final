@@ -1,22 +1,12 @@
-/* @pjs pauseOnBlur="true"; 
-        preload= "data/background.png,
-                  data/boy mouthopen.png,
-                  data/boy.png,
-                  data/boycry.png,
-                  data/ccake.png,
-                  data/donet.png,
-                  data/END.png,
-                  data/example 2.jpg,
-                  data/ggirl.png,
-                  data/ggirlcry.png,
-                  data/ggirlopen.png,
-                  data/heart.png,
-                  data/house.png,
-                  data/pink candy.png,
-                  data/rgirl.png,
-                  data/rgirlcry.png,
-                  data/rgirlopen.png,
-                  data/scake.png,
-                  data/START.png,
-                  data/yellow candy.png";
-                  */
+/* @pjs pauseOnBlur="true";
+        font="font/Square_One.ttf";
+        preload= "data/body4.png,
+                  data/head4.png,
+                  data/body1.png,
+                  data/head1.png,
+                  data/body2.png,
+                  data/head2.png,
+                  data/body3.png,
+                  data/head3.png,
+                  data/tail.png"; */
+
