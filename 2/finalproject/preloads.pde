@@ -10,7 +10,7 @@
                  data/beach - bomb01.png,
                  data/beach dog weapon01 - bone.png,
                  data/beach - cat.png,
-                 beach - dog causal.png,
+                 data/beach - dog causal.png,
                  data/beach cat weapon01.png,
                  data/+ life icon new.png,
                  data/beach - small.png"; */

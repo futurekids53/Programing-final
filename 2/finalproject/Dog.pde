@@ -19,7 +19,7 @@ Dog(int x, int y,  int l) {
     this.dogX = x;
     this.dogY = y;
     life = l;
-    imgDog = loadImage("beach - dog causal.png");
+    imgDog = loadImage("data/beach - dog causal.png");
   } 
 
 void display() {
