@@ -78,11 +78,11 @@ void setup() {
   question = new Question(100, 50, 100, 150, 200, 250, 100);
   minim = new Minim(this);
   song = minim.loadFile("data/map_song.mp3");
-  wow = minim.loadSample("data/wow.mp3");
-  ohoh = minim.loadSample("data/ohoh.mp3");
-  ohyeah = minim.loadSample("data/ohyeah.mp3");
-  cry = minim.loadSample("data/cry.mp3");
-  baba = minim.loadSample("data/baba.mp3");
+  wow = minim.loadFile("data/wow.mp3");
+  ohoh = minim.loadFile("data/ohoh.mp3");
+  ohyeah = minim.loadFile("data/ohyeah.mp3");
+  cry = minim.loadFile("data/cry.mp3");
+  baba = minim.loadFile("data/baba.mp3");
   reset();
   
   
