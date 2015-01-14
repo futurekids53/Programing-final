@@ -120,9 +120,9 @@ reset();
 break;
 
 case GAME_RUN:
-imgRun.resize(width, height);
-background(imgRun);
-
+//imgRun.resize(width, height);
+//background(imgRun);
+image(imgRun,0,0,640,480);
 song.play(); 
 
 drawCatLife();
