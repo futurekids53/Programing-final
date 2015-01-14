@@ -13,8 +13,8 @@ class Life{
   
   void display(){
   imageMode(CENTER);
-  imgLife.resize(0,50);
-  image(imgLife,lX, lY);
+  //imgLife.resize(0,50);
+  image(imgLife,lX, lY,50*72/101,50);
   }
   
   void move(){

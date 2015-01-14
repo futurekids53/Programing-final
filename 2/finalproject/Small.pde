@@ -13,8 +13,8 @@ class Small{
   
   void display(){
   imageMode(CENTER);
-  imgSmall.resize(0,50);
-  image(imgSmall, smallX, smallY);
+  //imgSmall.resize(0,50);
+  image(imgSmall, smallX, smallY,50*76/125,50);
   }
   
   void move(){

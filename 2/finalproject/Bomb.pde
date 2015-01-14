@@ -16,8 +16,8 @@ class Bomb{
 
   void display() {
     imageMode(CENTER);
-    imgBomb.resize(0,30);
-    image(imgBomb, mX, mY);
+   // imgBomb.resize(0,30);
+    image(imgBomb, mX, mY,30*155/94,30);
   }
 
   void move() {

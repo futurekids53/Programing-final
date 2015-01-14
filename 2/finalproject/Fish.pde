@@ -19,8 +19,8 @@ class Fish {
 
   void display() {
     imageMode(CENTER);
-    imgFish.resize(0,30);
-    image(imgFish, fX, fY);
+    //imgFish.resize(0,30);
+    image(imgFish, fX, fY,30*112/106,30);
   }
 
   void move() {

@@ -19,8 +19,8 @@ class Bone {
 
   void display() {
     imageMode(CENTER);
-    imgBone.resize(0,30);
-    image(imgBone, bX, bY);
+   // imgBone.resize(0,30);
+    image(imgBone, bX, bY,30*177/174,30);
   }
 
   void move() {

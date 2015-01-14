@@ -24,8 +24,8 @@ Dog(int x, int y,  int l) {
 
 void display() {
   imageMode(CENTER);
-  imgDog.resize(0,dogW);
-  image(imgDog,dogX,dogY);  
+  //imgDog.resize(0,dogW);
+  image(imgDog,dogX,dogY,dogW*176/180,dogW);  
   }
 
 void move(){

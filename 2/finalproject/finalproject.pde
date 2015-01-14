@@ -108,8 +108,9 @@ noStroke();
 //println(frameCount/60);
 switch(status){
 case GAME_START:
-imgHome.resize(width, height);
-background(imgHome);
+//imgHome.resize(width, height);
+//background(imgHome);
+image(imgHome,0,0,640,480);
 printTxt("Press ENTER to Start ", height-30, 20);
 
 break;
@@ -122,8 +123,9 @@ break;
 case GAME_RUN:
 //imgRun.resize(width, height);
 //background(imgRun);
-image(imgRun,0,0,640,480);
 song.play(); 
+imageMode(CORNER);
+image(imgRun,0,0,640,480);
 
 drawCatLife();
 drawDogLife();
@@ -165,22 +167,30 @@ cSmall.display();}
 break;
 
 case GAME_PAUSE:
-imgPause.resize(width, height);
-background(imgPause);
+imageMode(CORNER);
+
+image(imgPause,0,0,640,480);
+//imgPause.resize(width, height);
+//background(imgPause);
 printTxt("Press ENTER to Resume", 400, 20);
 break;
 
 case GAME_CAT_WIN:
+imageMode(CORNER);
 
- imgCatWin.resize(width, height);
- background(imgCatWin);
+image(imgCatWin,0,0,640,480);
+// imgCatWin.resize(width, height);
+// background(imgCatWin);
  //printTxt("CAT WINS!", "goodbye pup", 240, 60, 20 );
  reset();
 break;
 
 case GAME_DOG_WIN:
-imgDogWin.resize(width, height);
-background(imgDogWin);
+imageMode(CORNER);
+
+image(imgDogWin,0,0,640,480);
+//imgDogWin.resize(width, height);
+//background(imgDogWin);
 //printTxt("DOG WINS", "see you kitty", 240, 60, 20 );
 reset();
 break;
@@ -371,8 +381,8 @@ switch (DoglifeState){
 }
 
 while(x <= endCircle) { 
-imgHeart.resize(0, 20);
-image(imgHeart, x, y); 
+//imgHeart.resize(0, 20);
+image(imgHeart, x, y,22,20); 
 x = x + spacing; 
 } 
 }
@@ -406,8 +416,8 @@ switch (CatlifeState){
 }
 
 while(x <= endCircle) { 
-imgHeart.resize(0, 20);
-image(imgHeart, x, y);
+//imgHeart.resize(0, 20);
+image(imgHeart, x, y,22,20);
 x = x + spacing; 
 } 
 }

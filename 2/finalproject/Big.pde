@@ -13,8 +13,8 @@ class Big{
   
   void display(){
   imageMode(CENTER);
-  imgBig.resize(0,50);
-  image(imgBig, bigX, bigY);
+  //imgBig.resize(0,50);
+  image(imgBig, bigX, bigY,76*50/124,50);
   }
   
   void move(){

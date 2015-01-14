@@ -25,8 +25,8 @@ Cat(int x, int y,  int l) {
 
 void display() {
   imageMode(CENTER);
-  imgCat.resize(0,catW);
-  image(imgCat,catX,catY);
+ // imgCat.resize(0,catW);
+  image(imgCat,catX,catY,catW*164/202,catW);
   }
 
 void move(){
