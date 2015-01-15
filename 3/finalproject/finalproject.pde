@@ -3,7 +3,7 @@ PImage playbk,pause,start,win,lose;
 //MinimInput
 import ddf.minim.*;
 Minim minim;
-AudioInput in;
+AudioInput startin;
 AudioInput accessMic;
 AudioPlayer bgMusic;
 AudioPlayer jupShiro;
@@ -45,7 +45,7 @@ void setup(){
   lose = loadImage("data/gameover.png");
  //-------music------// 
   minim = new Minim(this);
-  in = minim.getLineIn();
+  startin = minim.getLineIn();
   bgMusic = minim.loadFile("data/Good Starts.mp3");
   fishAtk = minim.loadFile("data/attack02.wav");
   jupSound = minim.loadFile("data/jump01.wav");
@@ -364,7 +364,7 @@ void getVol(){
    float max =0 ;
    accessMic = minim.getLineIn();
    vol = accessMic.getGain();
-   for(int i = 0; i < in.bufferSize() - 1; i++){
+   for(int i = 0; i < startin.bufferSize() - 1; i++){
   // vol = in.mix.get(i)*50 ;  
    if(vol > max){
      max = vol ;
@@ -373,10 +373,10 @@ void getVol(){
    }
 }
 void checkJump(){
-  for(int i = 0; i < in.bufferSize() - 1; i++){
-    line( i, 50 + in.left.get(i)*50, i+1, 50 + in.left.get(i+1)*50 );
-    line( i, 150 + in.right.get(i)*50, i+1, 150 + in.right.get(i+1)*50);
-     if(in.mix.get(i)*50 > 45 ){
+  for(int i = 0; i < startin.bufferSize() - 1; i++){
+    line( i, 50 + startin.left.get(i)*50, i+1, 50 + startin.left.get(i+1)*50 );
+    line( i, 150 + startin.right.get(i)*50, i+1, 150 + startin.right.get(i+1)*50);
+     if(startin.mix.get(i)*50 > 45 ){
        if(player.ySpeed==0){
     //   println(in.left.get(i)*50) ;
        player.jump =true;
