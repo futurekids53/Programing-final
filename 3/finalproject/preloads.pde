@@ -9,7 +9,7 @@
                   data/mauJump.png,
                   data/mauStand.png,
                   data/pause.png,
-                  data/playbk.png,
+                  data/playbk.jpg,
                   data/Rope 100.png,
                   data/Rope 110.png,
                   data/Rope 150.png,
@@ -17,5 +17,5 @@
                   data/Rope 270.png,
                   data/shiro.png,
                   data/shiro2.png,
-                  data/startt.png;
+                  data/start.png;
                   */
