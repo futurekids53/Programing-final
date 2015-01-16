@@ -68,7 +68,7 @@ AudioPlayer song;
 
 void setup(){
 minim1 = new Minim(this);
-song = minim1.loadFile("Indie_Romance.mp3"); // song.pause();
+song = minim1.loadFile("data/Indie_Romance.mp3"); // song.pause();
 
   
 status = GAME_START;
