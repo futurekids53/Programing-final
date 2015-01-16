@@ -8,7 +8,7 @@ class Background{
   float bX;
   float bY;
   Background(){
-    background_play = loadImage("new_background.png"); 
+    background_play = loadImage("data/new_background.png"); 
     xSpeed = 10;
     thrustX = 1.5;
     decay = .97;

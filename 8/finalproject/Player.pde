@@ -13,9 +13,9 @@ class Player{
   final int down = 1;
   int jump_dir = up;
   Player(){
-    players_jump = loadImages("jump_animation/student", ".png", 20);
-    players_run = loadImages("run_animation/run",".png",10);
-    players_hurt = loadImage("student_hurt.png");
+    players_jump = loadImages("data/jump_animation/student", ".png", 20);
+    players_run = loadImages("data/run_animation/run",".png",10);
+    players_hurt = loadImage("data/student_hurt.png");
     Height = 0;
     jump = false;
     run = true;

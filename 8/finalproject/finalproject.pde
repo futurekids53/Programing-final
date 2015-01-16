@@ -40,14 +40,14 @@ PImage [] background_lose;
 void setup(){
   status = GAME_START;
   minim = new Minim(this);
-  music_player = minim.loadFile("夏日印象 - Summer.mp3");
+  music_player = minim.loadFile("data/夏日印象 - Summer.mp3");
   
   size(640,480);
   
-  background_start = loadImages("background/gamestart",".jpg",1);
-  background_pause = loadImages("background/pause",".jpg",1);
-  background_win = loadImages("background/win",".jpg",1);
-  background_lose = loadImages("background/lose",".jpg",1);
+  background_start = loadImages("data/background/gamestart",".jpg",1);
+  background_pause = loadImages("data/background/pause",".jpg",1);
+  background_win = loadImages("data/background/win",".jpg",1);
+  background_lose = loadImages("data/background/lose",".jpg",1);
   
   background = new Background();
   player = new Player();

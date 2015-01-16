@@ -6,7 +6,7 @@ class Rewards{
   Rewards(int x,int y){
     rX = x;
     rY = y;
-    rewardsList = loadImages("reward/reward",".png",5);
+    rewardsList = loadImages("data/reward/reward",".png",5);
     currentPosition = int(random(0,rewardsList.length));
   }
   
