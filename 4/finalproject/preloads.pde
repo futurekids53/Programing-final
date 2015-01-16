@@ -11,7 +11,6 @@
                   data/pause.png,
                   data/rule.png,
                   data/rule2.png,
-                  data/house.png,
                   data/student.png,
                   data/t.png,
                   data/TA.png,
