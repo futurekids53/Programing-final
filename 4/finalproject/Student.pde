@@ -1,5 +1,5 @@
 class Student {
-  PImage student = loadImage("student.png");
+  PImage student = loadImage("data/student.png");
   int sSize = 20;
   int sX;
   int sY;

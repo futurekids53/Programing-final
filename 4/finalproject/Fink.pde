@@ -1,5 +1,5 @@
 class Fink {
-  PImage fink= loadImage("fink.png");
+  PImage fink= loadImage("data/fink.png");
 
   int fX;
   int fY;

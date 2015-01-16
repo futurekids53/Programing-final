@@ -1,5 +1,5 @@
 class TA{
-  PImage TA= loadImage("TA.png");
+  PImage TA= loadImage("data/TA.png");
   int tx;
   int ty;
   int tsize=25;

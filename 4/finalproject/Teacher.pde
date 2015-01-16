@@ -1,5 +1,5 @@
 class Teacher {
-  PImage teacher = loadImage("t.png");
+  PImage teacher = loadImage("data/t.png");
   int speedL = 10;
   int speedR = 10;
   int tSize = 50;
